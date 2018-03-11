@@ -22,7 +22,6 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 
 
 .user1 {
-  background-color: #80d6ff;
   padding: 10px ;
   width: 200px;
   height: 20px;
@@ -56,16 +55,56 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     height:50px;
     margin:auto;
 }
+.proceed{
+  left: 50%;
+  top: 50%;
+  display: fixed;
+  position: 5px;
+  height:50px;
+  margin: auto;
+  background-color: #b4004e;
+  width: 35px;
+  height: 35px;
+  background: #ec407a;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  transform: translate(380%, 955%);
+}
+
+.button{
+  left: 50%;
+  top: 50%;
+  display: fixed;
+  position: 5px;
+  height:50px;
+  margin: auto;
+  width: 35px;
+  height: 35px;
+  background: #ec407a;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 1px 2px 5px #4B5861;
+  -webkit-box-shadow: 1px 1px 5px #4B5861;
+ }
 
 #p1{
   text-align:center;
   background-color: #ff77a9;
-  height:125px;
-  -moz-border-radius: 75px;
-  -webkit-border-radius: 75px;
-  width:125px;
+
+  height:170px;
+  -moz-border-radius: 120px;
+  -webkit-border-radius: 120px;
+  width:170px;
   vertical-align: middle;
-  line-height: 125px;
+  line-height: 170px;
+
+  font-family: Roboto;
+  font-size: 30px;
+
+
   position:relative;
   left: 40%;
   right:70%;
@@ -78,17 +117,99 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 #p2{
   text-align:center;
   background-color: #80d6ff;
-  height:125px;
-  -moz-border-radius: 75px;
-  -webkit-border-radius: 75px;
-  width:125px;
+  height:170px;
+  -moz-border-radius: 120px;
+  -webkit-border-radius: 120px;
+  width:170px;
   vertical-align: middle;
-  line-height: 125px;
+  line-height: 170px;
   left: 40%;
   right: 70%;
   position:relative;
-  top:300%;
+  top:600%;
+
+  font-size: 30px;
+  font-family: Roboto;
+
+
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow:1px 2px 5px #4B5861;
   -moz-box-shadow: 1px 1px 5px #4B5861;
+}
+#P1-Question{
+  text-align: center;
+  background-color: #80d6ff;
+  color: white;
+  width:170px;
+  height: 85px;
+  left:40%;
+  vertical-align: middle;
+  line-height: 85px;
+
+  position:relative;
+  top: -440%;
+
+  font-family: Roboto;
+  font-size: 30px;
+
+
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow:1px 2px 5px #4B5861;
+  -moz-box-shadow: 1px 1px 5px #4B5861;
+}
+#P2-Question{
+  text-align: center;
+  background-color: #ff77a9;
+  color: white;
+  width:170px;
+  height: 85px;
+  left:40%;
+  vertical-align: middle;
+  line-height: 85px;
+
+  position:relative;
+  top:-225%;
+
+  font-family: Roboto;
+  font-size: 30px;
+
+
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow:1px 2px 5px #4B5861;
+  -moz-box-shadow: 1px 1px 5px #4B5861;
+}
+.score-system{
+  position: relative;
+  left: 90%;
+  height: 850px;
+}
+#p1-Score{
+  font-size: 30px;
+
+}
+#p2-Score{
+  position: inherit;
+  top:55%;
+  font-size: 30px;
+
+}
+
+.input1 {
+  border: 0;
+  text-align: center;
+  font-size: 35px;
+  width: 200px;
+  height: 25px;
+  font-family: Roboto;
+  background-color: #42a5f5
+}
+
+.input2 {
+  border: 0;
+  text-align: center;
+  font-size: 35px;
+  width: 200px;
+  height: 25px;
+  font-family: Roboto;
+  background-color: #ff77a9;
 }
