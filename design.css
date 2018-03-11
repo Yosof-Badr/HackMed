@@ -136,6 +136,31 @@ box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow:1px 2px 5px #4B5861;
   -moz-box-shadow: 1px 1px 5px #4B5861;
 }
+
+#btn2{
+  text-align:center;
+  background-color: #80d6ff;
+  height:170px;
+  -moz-border-radius: 120px;
+  -webkit-border-radius: 120px;
+  width:170px;
+  vertical-align: middle;
+  line-height: 170px;
+  left: 40%;
+  right: 70%;
+  position:absolute;
+  top:600%;
+  z-index: 100;
+  font-size: 30px;
+  font-family: Roboto;
+
+
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow:1px 2px 5px #4B5861;
+  -moz-box-shadow: 1px 1px 5px #4B5861;
+}
+
+
 #P1-Question{
   text-align: center;
   background-color: #80d6ff;
