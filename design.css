@@ -7,7 +7,19 @@ body {  /*Background image*/
     left: 50%;
     top: 50%;
     transform: translate(-50%, -100%);
+
+
   }
+.image img{
+
+border-radius:150px;
+border-top: -15px;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow:1px 2px 5px #4B5861;
+-moz-box-shadow: 1px 1px 5px #4B5861;
+}
+
+
 
 .user1 {
   background-color: #80d6ff;
@@ -20,6 +32,8 @@ body {  /*Background image*/
   transform: translate(-50%, 30%);
   text-align: center;
   font-family: Roboto;
+  box-shadow: 1px 0px 5px #4B5861;
+  -webkit-box-shadow:1px 2px 5px #4B5861;
 }
 .user2 {
   background-color: #ff77a9;
@@ -32,6 +46,8 @@ body {  /*Background image*/
   transform: translate(-50%, 30%);
   text-align: center;
   font-family: Roboto;
+  box-shadow: 1px 0px 5px #4B5861;
+  -webkit-box-shadow:1px 2px 5px #4B5861;
 }
 .answer1{
   width: 100px;
