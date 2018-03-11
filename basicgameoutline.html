@@ -1,27 +1,147 @@
-<!-- Updated -->
 <!DOCTYPE html>
-  <html>
-    <body>
-        <head>
-          <link rel="stylesheet" href=".static/design.css">
-          <title> Game Page </title>
-        </head>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  var questions = ["Which of these features suggest that a pulsation in the neck is arterial?","A palpable left parasternal impulse suggests which abnormality?"];
 
-        <div class="positioning">
-            <p id="p1">  Other Text </p>
-            <p id="p2"> Text </p>
+  var answers = [["No variation with posture","Positive for hepatojugular reflux", "A waggling earlobe","Banter","Pressure in the root of the neck reduces the impulse"],["2No variation with posture","Positive for hepatojugular reflux","A waggling earlobe","No variation with posture","Pressure in the root of the neck reduces the impulse"]]
 
-            <p id="P1-Question"> Question </p>
-            <p id="P2-Question"> Question </p>
-        </div>
-
-        <div class="score-system">
-          <p id="p1-Score"> 0</p>
-          <p id="p2-Score"> 0</p>
-        </div>
+  var score1 = 0;
+  var score2 = 0;
+  var turn = 0;
 
 
+  $(document).ready(function(){
 
 
-    </body>
-  </html>
+      function newQuestion(){
+        var i = 0;  // the index of the current item to show
+
+        document
+            .getElementById('quest') //updates question
+            .innerHTML = questions[turn];
+
+        ans = answers[turn]
+
+        //displays answers
+        setInterval(function() {
+            var watch = turn;
+
+            document
+                .getElementById('ans')
+                .innerHTML = ans[i++];    // get the item and increment i to move to the next
+
+            if (i > 1) i = 0;   // reset to first element if you've reached the end
+            console.log(turn)
+          }, 1000);
+        }
+
+      $("#btn1").click(function(){
+          newQuestion()
+        })
+
+
+      $("#btn2").click(function(){
+        var selec = document.getElementById('ans').innerHTML
+        if (answers[0] == selec)
+        {
+          console.log("win")
+          score1 = score1 + 1
+        }
+        else
+        {
+          console.log("loose")
+          score1 = score1 - 1
+          }
+
+        document
+            .getElementById('sc1')
+            .innerHTML = score1;
+        turn ++
+
+        if(turn > questions.length-1)
+        {
+           turn = 0
+        }
+        newQuestion()
+
+
+      })
+
+      $("#btn3").click(function(){
+        var selec = document
+          .getElementById('ans').innerHTML
+        if (answers[0] == selec)
+        {
+          console.log("win")
+          score2 = score2 + 1
+        }
+        else
+        {
+          console.log("loose")
+          score2 = score2 - 1
+        }
+
+        document
+            .getElementById('sc2')
+            .innerHTML = score2;
+        turn ++
+
+        newQuestion()
+        if(turn > questions.length-1)
+        {
+           turn = 0
+        }
+        newQuestion()
+
+
+      })
+  });
+
+</script>
+
+
+</head>
+<!--  -->
+<!-- <p id = "quest"></p>
+<p id = "ans"></p>
+<p id = "sc1"></p>
+<p id = "sc2"></p>
+
+<button id="btn1">Start</button>
+<button id="btn2">P1</button>
+<button id="btn3">P2</button> -->
+
+
+<!--  -->
+<html>
+  <body>
+      <head>
+        <link rel="stylesheet" href="static/design.css">
+        <title> Game Page </title>
+      </head>
+
+      <div class="positioning">
+          <p id="p1">  Other Text </p>
+          <button id="btn2">P1</button>
+
+
+
+          <p id="p2"> Text </p>
+
+
+
+          <p id="P1-Question"> Question </p>
+          <p id="P2-Question"> Question </p>
+      </div>
+
+      <div class="score-system">
+        <p id="p1-Score"> 0</p>
+        <p id="p2-Score"> 0</p>
+      </div>
+
+
+</body>
+</html>
+
